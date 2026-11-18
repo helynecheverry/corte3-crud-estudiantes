@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: corte3-crud-estudiantes
+    env: docker
+    plan: free
+    region: oregon
+    envVars:
+      - key: DB_HOST
+        value: 127.0.0.1
+      - key: DB_PORT
+        value: 3306
+      - key: DB_NAME
+        value: educar
+      - key: DB_USER
+        value: educaruser
+      - key: DB_PASS
+        value: educarpass

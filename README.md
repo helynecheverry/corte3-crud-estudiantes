@@ -64,9 +64,21 @@ sql/Educar.sql          Script original de la base de datos
 | Detalle con Volver / Editar / Borrar (con confirmación) | 25% | Botones en la vista de detalle; `update` solo envía los campos cambiados. |
 | Buscar por cualquier campo (patrones, operadores y lógica AND) + cancelar consulta | 40% | `showForm('search')` + filtros validados en `api.php`; banner con «Cancelar consulta». |
 
+## Despliegue rápido (Render, plan gratuito)
+
+El repositorio de la aplicación es:
+https://github.com/helynecheverry/corte3-crud-estudiantes
+
+Despliegue en un clic (requiere iniciar sesión en Render con GitHub):
+https://render.com/deploy?repo=https://github.com/helynecheverry/corte3-crud-estudiantes
+
+El archivo `render.yaml` crea el servicio web y el `Dockerfile` levanta Apache + PHP + MariaDB
+e importa automáticamente `sql/Educar.sql`. Después del despliegue, Render asigna una URL
+pública (normalmente `https://corte3-crud-estudiantes.onrender.com`).
+
 ## Notas para la entrega
 
 - Para el enlace de hospedaje se puede usar cualquier servicio gratuito con PHP y MySQL
-  (por ejemplo InfinityFree, 000webhost o un servidor local expuesto).
+  (por ejemplo InfinityFree, 000webhost o Render).
 - Según la consigna, el trabajo escrito en Word debe incluir carátula, tabla de contenido,
   numeración de páginas, tamaño A3, los modelos de IA utilizados y las capturas de los prompts.

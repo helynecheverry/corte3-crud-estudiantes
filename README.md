@@ -64,6 +64,14 @@ sql/Educar.sql          Script original de la base de datos
 | Detalle con Volver / Editar / Borrar (con confirmación) | 25% | Botones en la vista de detalle; `update` solo envía los campos cambiados. |
 | Buscar por cualquier campo (patrones, operadores y lógica AND) + cancelar consulta | 40% | `showForm('search')` + filtros validados en `api.php`; banner con «Cancelar consulta». |
 
+## Aplicación publicada (enlace de hospedaje)
+
+**https://helynecheverry.github.io/corte3-crud-estudiantes/**
+
+Ese enlace abre una versión funcional con los 1.331 registros reales extraídos de `Educar.sql`.
+Incluye GRID paginado, orden ASC/DESC, adición, detalle, edición, borrado y búsqueda avanzada.
+El archivo ZIP sigue conteniendo la versión PHP original (Apache + MySQL) solicitada en la guía.
+
 ## Despliegue rápido (Render, plan gratuito)
 
 El repositorio de la aplicación es:
